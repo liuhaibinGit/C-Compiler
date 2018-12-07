@@ -1,0 +1,35 @@
+SET(passes_SOURCES
+  pass.cpp
+  CoalesceLocals.cpp
+  CodePushing.cpp
+  DeadCodeElimination.cpp
+  DuplicateFunctionElimination.cpp
+  ExtractFunction.cpp
+  Inlining.cpp
+  LegalizeJSInterface.cpp
+  LocalCSE.cpp
+  LogExecution.cpp
+  InstrumentMemory.cpp
+  MemoryPacking.cpp
+  MergeBlocks.cpp
+  Metrics.cpp
+  NameManager.cpp
+  NameList.cpp
+  OptimizeInstructions.cpp
+  PickLoadSigns.cpp
+  PostEmscripten.cpp
+  Precompute.cpp
+  Print.cpp
+  PrintCallGraph.cpp
+  RelooperJumpThreading.cpp
+  RemoveImports.cpp
+  RemoveMemory.cpp
+  RemoveUnusedBrs.cpp
+  RemoveUnusedNames.cpp
+  RemoveUnusedModuleElements.cpp
+  ReorderLocals.cpp
+  ReorderFunctions.cpp
+  SimplifyLocals.cpp
+  Vacuum.cpp
+)
+ADD_LIBRARY(passes STATIC ${passes_SOURCES})
